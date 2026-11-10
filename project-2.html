@@ -1,1 +1,122 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>project 2 | Bella Liu</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%23f5dce5'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-family='Georgia' font-size='26' fill='%2378445d'%3EB%3C/text%3E%3C/svg%3E"></head><body><main class="project-page"><h1>project 2</h1></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Human Factor · Zara Website Redesign | Bella Liu</title><style>:root{color-scheme:light;--pink:#fcf0f4;--ink:#583648;--muted:#784a60}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:32px}body{margin:0;background:var(--pink);color:var(--ink);font-family:'Times New Roman',Times,serif}a{color:inherit}a:focus-visible{outline:2px solid var(--muted);outline-offset:10px}.hero{min-height:700px;height:100svh;position:relative;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg,rgba(255,232,241,.55),rgba(254,233,242,.2)),url('lily.jpg') center/cover no-repeat;isolation:isolate}.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(252,240,244,.5),transparent 25%);z-index:-1}.identity{text-align:center;margin-top:-24px}.portrait{width:202px;height:202px;border-radius:50%;overflow:hidden;border:6px solid rgba(255,249,252,.8);box-shadow:0 12px 48px #68304920;margin:0 auto 28px;position:relative;background:#ebc6d3}.portrait img{position:absolute;width:190%;max-width:none;height:auto;left:-57%;top:-65%}h1{font-size:clamp(5.4rem,10vw,10rem);font-weight:400;line-height:1.05;letter-spacing:-.055em;margin:0;text-shadow:0 2px 30px #fff5}.period{color:#95637d}.scroll-link{position:absolute;bottom:38px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;text-decoration:none;font-family:'Times New Roman',Times,serif;font-size:.875rem;letter-spacing:.15em}.scroll-link span:last-child{font-size:1.5rem}.portfolio{padding:100px 6vw 116px;background:radial-gradient(ellipse at 50% 35%,#fff8fa,var(--pink) 80%)}h2{text-align:center;font-size:clamp(2.5rem,4.5vw,4.25rem);font-weight:400;letter-spacing:-.04em;margin:0 0 55px}h2 em{font-weight:400;color:#95637d}.projects{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:54px 30px;max-width:1050px;margin:auto}.project{grid-column:span 2;text-align:center;text-decoration:none;display:block}.project:nth-child(4){grid-column:2/span 2}.project:nth-child(5){grid-column:4/span 2}.flower{height:290px;position:relative;overflow:hidden;mix-blend-mode:multiply;transition:transform .35s ease;mask-image:radial-gradient(ellipse 49% 49% at center,#000 68%,transparent 100%)}.flower img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 47%}.project h3{font-weight:400;font-size:1.375rem;letter-spacing:.02em;margin:20px 0 0;transition:color .2s}.project:hover .flower{transform:translateY(-8px) rotate(-2deg)}.project:hover h3{color:#a65c80}.project-page{min-height:100svh;padding:96px 9vw}.project-page h1{font-size:clamp(3rem,7vw,6rem);letter-spacing:-.04em;text-shadow:none}@media(max-width:600px){.hero{min-height:580px}.portrait{width:162px;height:162px;border-width:5px;margin-bottom:30px}h1{font-size:5rem}.portfolio{padding:72px 18px 80px}h2{font-size:2.45rem;margin-bottom:34px}.projects{gap:35px 8px}.flower{height:170px}.project h3{font-size:1rem;margin-top:12px}.scroll-link{bottom:28px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.flower,.project h3{transition:none}}
+/* Frame the upper lily as one flower for each project. */
+.flower{height:auto;aspect-ratio:1.1}.flower img{position:absolute;width:160%;height:auto;max-width:none;left:-53%;top:-27%;object-fit:initial}
+/* A quiet, two-column introduction that dissolves into the portfolio. */
+.hero{background-color:var(--pink)}
+.hero:after{background:linear-gradient(to bottom,transparent 42%,rgba(252,240,244,.12) 57%,rgba(252,240,244,.65) 79%,var(--pink) 100%)}
+.identity{width:min(1100px,84vw);display:grid;grid-template-columns:1fr 0.8fr;align-items:center;gap:8vw;text-align:left;margin-top:-40px}
+.identity h1{grid-column:1;grid-row:1;font-size:clamp(3.5rem,6.8vw,6.5rem);letter-spacing:-.045em;white-space:nowrap}
+.portrait{grid-column:2;grid-row:1;width:100%;height:auto;aspect-ratio:3/4;border-radius:3px;border:5px solid rgba(255,249,252,.75);margin:0;box-shadow:0 18px 65px #68304924}
+.portrait img{position:static;display:block;width:100%;height:100%;object-fit:cover;max-width:100%}
+.portfolio{background:var(--pink)}
+@media(max-width:600px){.identity{width:90vw;grid-template-columns:1fr 1fr;gap:5vw;margin-top:-35px}.identity h1{font-size:clamp(2rem,7.7vw,3rem)}.portrait{border-width:3px}.hero:after{background:linear-gradient(to bottom,transparent 40%,rgba(252,240,244,.4) 68%,var(--pink) 100%)}}
+
+.consumer-project{max-width:1400px;margin:0 auto}.back-link{display:inline-block;font-family:'Times New Roman',Times,serif;font-size:1rem;text-decoration:none;margin-bottom:52px}.consumer-project h1{font-size:clamp(2.5rem,5.6vw,5.2rem);line-height:1.12;overflow-wrap:break-word}.documents{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:58px}.document{padding:34px;border:1px solid #dfbfce;border-radius:8px;background:#fff8fa}.document-type{font:0.875rem 'Times New Roman',Times,serif;letter-spacing:.12em;color:var(--muted)}.document h2{text-align:left;font-size:clamp(1.7rem,3vw,2.25rem);margin:22px 0 32px;letter-spacing:-.025em}.document a{font:1rem 'Times New Roman',Times,serif;text-underline-offset:5px}.document a:hover{color:#a65c80}@media(max-width:650px){.documents{grid-template-columns:1fr}.consumer-project{padding:48px 7vw}.back-link{margin-bottom:36px}.document{padding:26px}}
+
+/* About Me sits below the name, beside the portrait. */
+.hero{height:auto;min-height:max(700px,100svh);padding:76px 0 120px}
+.identity{grid-template-columns:1.2fr .9fr;gap:6vw;margin-top:0}
+.introduction{grid-column:1;grid-row:1;min-width:0}
+.identity h1{font-size:clamp(3.5rem,6.4vw,6rem)}
+.about-me{margin-top:28px;padding:28px 30px;background:rgba(248,218,231,.93);border:1px solid #e9bfd1;border-radius:4px;box-shadow:0 8px 30px #6830490a}
+.about-me h2{text-align:left;font-size:1.55rem;letter-spacing:-.02em;margin:0 0 16px;color:var(--ink)}
+.about-me p{font-family:'Times New Roman',Times,serif;font-size:1rem;line-height:1.7;margin:0;color:#583648}
+.about-me p+p{margin-top:18px}
+@media(max-width:760px){.hero{padding:60px 0 110px}.identity{width:88vw;grid-template-columns:1fr;gap:32px}.introduction{grid-column:1;grid-row:1}.identity h1{font-size:clamp(3rem,10vw,4.5rem)}.about-me{margin-top:22px;padding:24px}.portrait{grid-column:1;grid-row:2;width:min(100%,340px);justify-self:center}.scroll-link{bottom:28px}}
+
+/* Education, skills, and contact follow the introduction. */
+.identity{align-items:start}
+.portrait{margin-top:12px}
+.profile-details{margin-top:34px}
+.profile-details section+section{margin-top:30px}
+.profile-details h2{text-align:left;font-size:1.65rem;font-weight:700;letter-spacing:-.02em;margin:0 0 16px}
+.education-row{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.education-copy{min-width:0}
+.education-copy h3{font-size:1.3rem;margin:0 0 7px;font-weight:700}
+.education-copy p{font-size:1.05rem;line-height:1.5;margin:3px 0;color:var(--muted)}
+.education-years{font-size:1rem;white-space:nowrap;color:var(--muted);margin:0}
+.skill-tags{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.skill-tags li{padding:8px 17px;border:1px solid #dfbfce;border-radius:999px;background:#fff8fa;font-size:1.05rem;box-shadow:0 2px 5px #68304908}
+.contact-list{margin:0;font-size:1.05rem;line-height:1.6}
+.contact-list>div{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:7px}
+.contact-list dt{color:var(--muted);min-width:105px}
+.contact-list dd{margin:0;overflow-wrap:anywhere}
+.contact-list a{text-underline-offset:4px;text-decoration-color:#c995ad}
+.contact-list a:hover{color:#a65c80}
+@media(max-width:760px){.portrait{margin-top:0}.education-row{align-items:flex-start}.education-years{padding-top:4px}.profile-details{margin-top:28px}}
+@media(max-width:400px){.education-row{flex-direction:column;gap:8px}.education-years{padding-top:0}}
+
+/* School and skill icons. */
+.education-row{display:grid;grid-template-columns:54px minmax(0,1fr) auto;gap:14px;align-items:center}
+.school-logo{display:block;width:54px;height:60px;object-fit:contain}
+.education-copy h3 a{text-decoration:none;text-underline-offset:4px}
+.education-copy h3 a:hover{text-decoration:underline;color:#95637d}
+.skill-tags li{display:inline-flex;align-items:center;gap:9px}
+.skill-tags img{display:block;width:22px;height:22px;object-fit:contain;flex-shrink:0}
+@media(max-width:480px){.education-row{grid-template-columns:44px minmax(0,1fr);gap:10px 12px}.school-logo{width:44px;height:50px}.education-years{grid-column:2;justify-self:start}.skill-tags li{padding:8px 13px}}
+
+/* Align the introduction and portrait; give education a full-width row. */
+.identity{grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);align-items:stretch;gap:5vw}
+.introduction{display:flex;flex-direction:column}
+.about-me{flex:1;margin-bottom:0;display:flex;flex-direction:column;justify-content:center}
+.portrait{margin:0;align-self:stretch}
+.profile-details{width:min(1100px,84vw);margin:0 auto;padding:32px 0 24px}
+.profile-details section+section{margin-top:36px}
+.education-row{grid-template-columns:72px minmax(0,1fr);gap:20px}
+.degree-line{display:flex;justify-content:space-between;align-items:baseline;gap:24px}
+.degree-line>p:first-child{white-space:nowrap}
+.degree-line .education-years{flex-shrink:0;white-space:nowrap}
+.school-logo-circle{width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.38);border:1px solid rgba(223,191,206,.45);display:flex;align-items:center;justify-content:center}
+.school-logo{width:57px;height:61px}
+@media(max-width:760px){.identity{grid-template-columns:1fr;gap:32px}.about-me{flex:auto;padding:26px}.portrait{align-self:start}.profile-details{width:88vw;padding-top:12px}.education-row{grid-template-columns:58px minmax(0,1fr);gap:14px}.school-logo-circle{width:58px;height:58px}.school-logo{width:46px;height:49px}.degree-line{flex-wrap:wrap;gap:4px 16px}.degree-line>p:first-child{white-space:normal}}
+
+/* Soft translucent introduction and illustrated project entry. */
+.about-me{background:rgba(248,218,231,.48);border-color:rgba(233,191,209,.48);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+.name-heading{display:flex;align-items:center;gap:18px;min-width:0}
+.name-heading h1{font-size:clamp(3rem,5.5vw,5.2rem);flex:0 1 auto}
+.name-flower{width:68px;height:96px;object-fit:contain;flex-shrink:0;transform:rotate(9deg)}
+.skill-tags{flex-wrap:nowrap;gap:12px;overflow-x:auto;padding:2px 2px 8px}
+.skill-tags li{white-space:nowrap;flex-shrink:0}
+.project-portrait{aspect-ratio:1.1;display:flex;align-items:center;justify-content:center;transition:transform .35s ease}
+.project-portrait img{display:block;width:100%;height:100%;max-height:290px;object-fit:contain}
+.consumer-entry h3{font-size:1.4rem;margin:16px 0 0;font-weight:700;letter-spacing:0}
+.consumer-entry:hover .project-portrait{transform:translateY(-8px)}
+@media(max-width:760px){.name-heading{gap:14px}.name-heading h1{font-size:clamp(2.8rem,9vw,4.5rem)}.name-flower{width:54px;height:78px}.skill-tags{gap:8px}.consumer-entry h3{font-size:1.05rem}}
+@media(prefers-reduced-motion:reduce){.project-portrait{transition:none}}
+
+/* Full original portrait, two intentional skill rows, and project materials. */
+.identity{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4vw}
+.portrait{aspect-ratio:auto;align-self:start;height:auto;overflow:hidden}
+.portrait img{position:static;display:block;width:100%;height:auto;object-fit:contain}
+.skills-rows{display:flex;flex-direction:column;gap:10px}
+.skills-rows .skill-tags{flex-wrap:nowrap;overflow-x:auto;margin:0;padding:2px 2px 6px;gap:10px}
+.skills-rows .skill-tags li{padding:8px 14px;font-size:1rem;gap:8px}
+.project-description{max-width:1000px;font-size:1.2rem;line-height:1.8;margin:30px 0 0;color:var(--muted)}
+.image-document{position:relative;isolation:isolate;overflow:hidden;min-height:285px;background:#fff9fb;display:flex;flex-direction:column;justify-content:center}
+.image-document:before{content:'';position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;opacity:.24}
+.diptyque-document:before{background-image:url('fig-background.png')}
+.lululemon-document:before{background-image:url('yoga-background.png');background-position:center 42%}
+.image-document h2{font-weight:700}
+.zara-materials{display:grid;grid-template-columns:minmax(220px,.65fr) minmax(0,1.35fr);gap:30px;margin-top:48px;align-items:start}
+.video-document{padding:28px;border:1px solid #dfbfce;border-radius:8px;background:#fff8fa}
+.video-document h2{font-size:1.8rem;text-align:left;letter-spacing:-.02em;margin:0 0 22px}
+.video-document video{display:block;width:100%;max-height:550px;background:#20191d;border-radius:4px}
+.video-link{display:inline-block;margin-top:18px;text-underline-offset:5px}
+.zara-entry:hover .project-portrait{transform:translateY(-8px)}
+@media(max-width:900px){.skills-rows .skill-tags{flex-wrap:wrap}.zara-materials{grid-template-columns:1fr}}
+@media(max-width:760px){.identity{grid-template-columns:1fr}.portrait{width:min(100%,440px)}.project-description{font-size:1.1rem;line-height:1.7}.video-document{padding:22px}}
+
+/* Center the full photo beside the introduction, with the name above it. */
+@media(min-width:761px){.portrait{align-self:center;margin-block:32px}.introduction{align-self:stretch}}
+.project-description{text-indent:2em}
+.zara-entry h3{font-size:1.4rem;margin:16px 0 0;font-weight:700;letter-spacing:0}
+@media(max-width:760px){.zara-entry h3{font-size:1.05rem}}
+
+/* Soft lace texture behind both Zara materials, keeping content opaque. */
+.zara-materials > .document,.zara-materials > .video-document{position:relative;isolation:isolate;overflow:hidden;background:#fff8fa}
+.zara-materials > .document::before,.zara-materials > .video-document::before{content:"";position:absolute;inset:0;z-index:-1;background:url('zara-lace-background.png') center/cover no-repeat;opacity:.25;pointer-events:none}
+</style></head><body><main class="project-page consumer-project zara-project">
+<a class="back-link" href="index.html#portfolio">← Portfolio Projects</a>
+<h1>Human Factor · Zara Website Redesign</h1><p class="project-description">I redesigned Zara’s online shopping experience in Figma to make it easier to browse while preserving the brand’s editorial style. Drawing on human factors psychology, I identified where oversized imagery, crowded menus, and scattered product details made it harder for shoppers to find what they needed. I applied principles of selective attention and working memory to create a clearer visual hierarchy, make filters easier to spot, and group key product details so shoppers could compare options with less effort.</p>
+<div class="zara-materials"><article class="document"><span class="document-type">PDF</span><h2>Project Brochure</h2><a href="project-brochure-bella-liu.pdf" target="_blank" rel="noopener">View PDF ↗</a></article>
+<section class="video-document" aria-labelledby="video-title"><h2 id="video-title">Website Demonstration</h2><video controls preload="metadata" playsinline aria-label="Zara website redesign demonstration"><source src="website-demonstration-bella-liu.mp4" type="video/mp4">Your browser does not support embedded video.</video><a class="video-link" href="website-demonstration-bella-liu.mp4" target="_blank" rel="noopener">Open video ↗</a></section></div></main></body></html>
